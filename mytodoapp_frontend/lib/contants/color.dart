@@ -13,4 +13,8 @@ class AppColors {
 
   //lable font color
   static const Color lableFontColor = Color.fromARGB(255,143,148,154);
+
+  //text field border color
+  static const Color textFieldBorderColor = Color.fromARGB(255, 241, 233, 233);
+
 }
