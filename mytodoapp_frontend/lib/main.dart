@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mytodo_app/features/authentication/ui/loginScreen.dart';
 import 'package:mytodo_app/features/authentication/ui/signUpScreen.dart';
+import 'package:mytodo_app/features/home/ui/homeScreen.dart';
 import 'package:mytodo_app/splash_screen.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Loginscreen(),
+      home: const homePage(),
     );
   }
 }
