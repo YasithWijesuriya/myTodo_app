@@ -146,13 +146,18 @@ class _homePageState extends State<homePage> {
                         fontFamily: 'poppins',
                         fontWeight: FontWeight.w600,
                         fontSize: 20,
+                      
                       ),
                     ),
+                    
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   SizedBox(
                     width: screenWidth,
-                    height:
-                        screenHeight - (AppBar().preferredSize.height + 255),
+                    height:screenHeight - (AppBar().preferredSize.height + 265),
+                        
                     child: Column(
                       children: [
                         Container(
