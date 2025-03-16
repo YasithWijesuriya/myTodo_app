@@ -19,5 +19,8 @@ class AppColors {
 
   //progress LinearProgressIndicator background color
   static const Color progressBgColor = Color.fromARGB(255, 0, 71, 151);
+ 
+  //progress LinearProgressIndicator background color
+  static const Color notificationBgColor = Color.fromARGB(255,241,247,254);
 
 }
