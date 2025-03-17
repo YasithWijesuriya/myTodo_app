@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:mytodo_app/contants/color.dart';
+import 'package:mytodo_app/widgets/customButton.dart';
+import 'package:mytodo_app/widgets/customTextfield.dart';
 
 class Loginscreen extends StatefulWidget {
   const Loginscreen({super.key});
@@ -80,80 +82,11 @@ class _LoginscreenState extends State<Loginscreen> {
                           ],
                         ),
                         const SizedBox(height: 20), // Add spacing
-                        TextField(
-                          controller: emailController,
-                          decoration: InputDecoration(
-                            filled: true,
-                            fillColor: const Color.fromARGB(255, 255, 255, 255),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(
-                                color: AppColors.textFieldBorderColor,
-                              ),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(
-                                color: AppColors.textFieldBorderColor,
-                              ),
-                            ),
-                            label: Text(
-                              'Email',
-                              style: TextStyle(
-                                color: AppColors.lableFontColor,
-                                fontFamily: 'poppins',
-                              ),
-                            ),
-                          ),
-                        ),
+                        Customtextfield(controller: emailController, lableText:'Email', borderColor:AppColors.textFieldBorderColor),
                         const SizedBox(height: 10), // Add spacing
-                        TextField(
-                          controller: passwordController,
-                          obscureText: true, // For password input
-                          decoration: InputDecoration(
-                            filled: true,
-                            fillColor: const Color.fromARGB(255, 255, 255, 255),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(
-                                color:  AppColors.textFieldBorderColor,
-                              ),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              borderSide: const BorderSide(
-                                color: AppColors.textFieldBorderColor,
-                              ),
-                            ),
-                            label: Text(
-                              'Password',
-                              style: TextStyle(
-                                color: AppColors.lableFontColor,
-                                fontFamily: 'poppins',
-                              ),
-                            ),
-                          ),
-                        ),
+                        Customtextfield(controller:passwordController, lableText:'Password', borderColor:AppColors.textFieldBorderColor),
                         const SizedBox(height: 20), // Add spacing
-                        Container(
-                        decoration: BoxDecoration(
-                       color:AppColors.accentColor,
-                       borderRadius: BorderRadius.circular(40),
-                      
-                        ),
-                        width: screenWidth,
-                        height:55,
-                        child:Center(
-                          child: Text(
-                            'Login',
-                            style:TextStyle(
-                              color:Colors.white,
-                              fontSize: 16,
-                              fontWeight:FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
+                       Custombutton(btnWidth: screenWidth, btnText:'Login'),
                       const SizedBox(height: 10), 
                        Row(
                       children: [
