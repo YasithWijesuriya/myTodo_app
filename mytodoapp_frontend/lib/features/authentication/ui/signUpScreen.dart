@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mytodo_app/contants/color.dart';
+import 'package:mytodo_app/widgets/customButton.dart';
+import 'package:mytodo_app/widgets/customTextfield.dart';
 
 class SignUpscreen extends StatefulWidget {
   const SignUpscreen({super.key});
@@ -52,109 +54,22 @@ class _SignUpscreenState extends State<SignUpscreen> {
                    
                     Padding(
                       padding:const EdgeInsets.symmetric(horizontal: 10.0 ,vertical: 10.0,),
-                      child: TextField(
-                        controller: nameController,
-                        decoration:InputDecoration(
-                          filled:true,
-                          fillColor: const Color.fromARGB(255, 255, 255, 255),
-                          enabledBorder:OutlineInputBorder(
-                             borderRadius: BorderRadius.circular(20), 
-                             borderSide: BorderSide(
-                              color:Colors.white,
-                             ),
-                          ),
-                          focusedBorder:OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
-                              color: Colors.white,
-                          ),
-                          ),
-                          label: Text('Name',style:TextStyle(
-                            color:AppColors.lableFontColor,
-                            fontFamily:'poppins',
-                          ),), 
-                          
-                        ),
-                      ),
+                      child: Customtextfield(controller: nameController, lableText:'Name', borderColor:Colors.white)
                     ),
                    
 
                     Padding(
                       padding:const EdgeInsets.symmetric(horizontal: 10.0 , vertical: 10.0,),
-                      child: TextField(
-                        controller: emailController,
-                        decoration:InputDecoration(
-                          filled:true,
-                          fillColor: const Color.fromARGB(255, 255, 255, 255),
-                          enabledBorder:OutlineInputBorder(
-                             borderRadius: BorderRadius.circular(20), 
-                             borderSide: BorderSide(
-                              color:Colors.white,
-                             ),
-                          ),
-                          focusedBorder:OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
-                              color: Colors.white,
-                          ),
-                          ),
-                          label: Text('Email',style:TextStyle(
-                            color:AppColors.lableFontColor,
-                            fontFamily:'poppins',
-                          ),), 
-                          
-                        ),
-                      ),
+                      child: Customtextfield(controller: emailController, lableText:'Email', borderColor:Colors.white)
                     ),
 
                     Padding(
                       padding:const EdgeInsets.symmetric(horizontal: 10.0 ,vertical: 10.0,),
-                      child: TextField(
-                        controller: passwordController,
-                        decoration:InputDecoration(
-                          filled:true,
-                          fillColor: const Color.fromARGB(255, 255, 255, 255),
-                          enabledBorder:OutlineInputBorder(
-                             borderRadius: BorderRadius.circular(20), 
-                             borderSide: BorderSide(
-                              color:Colors.white,
-                             ),
-                          ),
-                          focusedBorder:OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
-                              color: Colors.white,
-                          ),
-                          ),
-                          label: Text('Password',style:TextStyle(
-                            color:AppColors.lableFontColor,
-                            fontFamily:'poppins',
-                          ),), 
-                          
-                        ),
-                      ),
+                      child: Customtextfield(controller: passwordController, lableText:'Password', borderColor:Colors.white )
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                       color:AppColors.accentColor,
-                       borderRadius: BorderRadius.circular(40),
-                      
-                        ),
-                        width: screenWidth,
-                        height:55,
-                        child:Center(
-                          child: Text(
-                            'Sign up',
-                            style:TextStyle(
-                              color:Colors.white,
-                              fontSize: 16,
-                              fontWeight:FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
+                      child: Custombutton(btnWidth: screenWidth, btnText:'Sign up')
                     ),
                   
                   Padding(
