@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mytodo_app/contants/color.dart';
+import 'package:mytodo_app/widgets/customTodoCard.dart';
 
 class homePage extends StatefulWidget {
   const homePage({super.key});
@@ -16,6 +17,8 @@ class _homePageState extends State<homePage> {
 
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 50,
+        
         title: Row(
           children: [
             Text(
@@ -64,10 +67,8 @@ class _homePageState extends State<homePage> {
                         fontSize: 16,
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
                     Spacer(),
+                  
                     Text(
                       'Today Progress',
                       style: TextStyle(
@@ -76,6 +77,10 @@ class _homePageState extends State<homePage> {
                         fontSize: 20,
                       ),
                     ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    
                     Container(
                       height: 76,
                       width: screenWidth,
@@ -123,7 +128,9 @@ class _homePageState extends State<homePage> {
                               ),
                             ),
                           ),
-                          Spacer(),
+                         SizedBox(
+                          height:15,
+                         ),
                         ],
                       ),
                     ),
@@ -154,56 +161,15 @@ class _homePageState extends State<homePage> {
                   SizedBox(
                     height: 10,
                   ),
-                  SizedBox(
+                  Container(
                     width: screenWidth,
                     height:screenHeight - (AppBar().preferredSize.height + 265),
                         
                     child: Column(
                       children: [
-                        Container(
-                          width: screenWidth,
-                          height: 70,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: AppColors.accentColor.withOpacity(0.5),
-                            ),
-                          ),
-                          child: Row(
-                            children: [
-                              Radio(
-                                  value: 0,
-                                  groupValue: 0,
-                                  onChanged: (value) {}),
-                              Text(
-                                'Today',
-                                style: TextStyle(
-                                  fontFamily: 'poppins',
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Spacer(),
-                              Column(
-                                children: [
-                                  Spacer(),
-                                  Icon(Icons.edit),
-                                  SizedBox(
-                                    height: 3,
-                                  ),
-                                  Icon(
-                                    Icons.delete,
-                                    color: Colors.red,
-                                  ),
-                                  Spacer(),
-                                ],
-                              ),
-                              SizedBox(
-                                width: 20,
-                              ),
-                            ],
-                          ),
-                        ),
+                        Customtodocard(cardTiltle:'Work Out', isTaskCompleted: true),
+                        Customtodocard(cardTiltle:'Study', isTaskCompleted: false),
+                        Customtodocard(cardTiltle:'Wash', isTaskCompleted: false),
                       ],
                     ),
                   )
