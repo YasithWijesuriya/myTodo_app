@@ -32,7 +32,7 @@ class _SignUpscreenState extends State<SignUpscreen> {
             child: Container(
                 width: screenWidth,
                 // padding:EdgeInsets.symmetric(horizontal:40,vertical: 15,),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: AppColors.signupAccentColor,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
@@ -42,8 +42,8 @@ class _SignUpscreenState extends State<SignUpscreen> {
                 child: Column(
                   // crossAxisAlignment:CrossAxisAlignment.start,
                   children: [
-                   Padding(padding: EdgeInsets.all(5),),
-                    Text('Signup',
+                   const Padding(padding: EdgeInsets.all(5),),
+                    const Text('Signup',
                     style: TextStyle(
                     fontSize: 36,
                     fontFamily: 'poppins',
@@ -76,7 +76,7 @@ class _SignUpscreenState extends State<SignUpscreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 10.0,),
                     child: Row(
                       children: [
-                        Text('Already have an account? ',
+                        const Text('Already have an account? ',
                         style: TextStyle(
                           fontSize: 14,
                           color: AppColors.fontColorBlack,

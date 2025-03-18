@@ -21,7 +21,7 @@ class _homePageState extends State<homePage> {
         
         title: Row(
           children: [
-            Text(
+            const Text(
               'Tuesday, March 11 , 2025',
               style: TextStyle(
                 fontFamily: 'poppins',
@@ -29,7 +29,7 @@ class _homePageState extends State<homePage> {
                 fontSize: 12,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Image.asset(
               'assets/images/notification.png',
               width: 20,
@@ -47,11 +47,11 @@ class _homePageState extends State<homePage> {
               child: Container(
                 height: 210,
                 width: screenWidth,
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Welcome Phillip',
                       style: TextStyle(
                         fontFamily: 'poppins',
@@ -59,7 +59,7 @@ class _homePageState extends State<homePage> {
                         fontSize: 26,
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Have a nice day!',
                       style: TextStyle(
                         fontFamily: 'poppins',
@@ -67,9 +67,9 @@ class _homePageState extends State<homePage> {
                         fontSize: 16,
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                   
-                    Text(
+                    const Text(
                       'Today Progress',
                       style: TextStyle(
                         fontFamily: 'poppins',
@@ -77,22 +77,22 @@ class _homePageState extends State<homePage> {
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     
                     Container(
                       height: 76,
                       width: screenWidth,
-                      padding: EdgeInsets.symmetric(horizontal: 15),
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage(('assets/images/homeBoximg.png')),
                           fit: BoxFit.cover,
                         ),
                       ),
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Spacer(),
@@ -141,11 +141,11 @@ class _homePageState extends State<homePage> {
             Container(
               width: screenWidth,
               height: screenHeight - (AppBar().preferredSize.height + 210),
-              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                     child: Text(
                       'Daily Tasks',
@@ -158,14 +158,14 @@ class _homePageState extends State<homePage> {
                     ),
                     
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Container(
+                  SizedBox(
                     width: screenWidth,
                     height:screenHeight - (AppBar().preferredSize.height + 265),
                         
-                    child: Column(
+                    child: const Column(
                       children: [
                         Customtodocard(cardTiltle:'Work Out', isTaskCompleted: true),
                         Customtodocard(cardTiltle:'Study', isTaskCompleted: false),
@@ -182,7 +182,7 @@ class _homePageState extends State<homePage> {
       floatingActionButton: FloatingActionButton.extended(
         backgroundColor:AppColors.accentColor,
         onPressed: () {},
-        label: Row(
+        label: const Row(
           children: [
             Icon(Icons.add ,color:Colors.white,),
             SizedBox(

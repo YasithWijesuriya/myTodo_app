@@ -35,7 +35,7 @@ class _CustomtextfieldState extends State<Customtextfield> {
                               color: widget.borderColor,
                           ),
                           ),
-                          label: Text(widget.lableText,style:TextStyle(
+                          label: Text(widget.lableText,style:const TextStyle(
                             color:AppColors.lableFontColor,
                             fontFamily:'poppins',
                           ),), 

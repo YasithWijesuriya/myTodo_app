@@ -40,9 +40,9 @@ class _LoginscreenState extends State<Loginscreen> {
                 child: Container(
                   width: screenWidth,
                   padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
-                    borderRadius: const BorderRadius.only(
+                    borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(20),
                       topRight: Radius.circular(20),
                     ),
@@ -50,7 +50,7 @@ class _LoginscreenState extends State<Loginscreen> {
                   child: SingleChildScrollView( // Add this to make the form scrollable
                     child: Column(
                       children: [
-                        Text(
+                        const Text(
                           'Login',
                           style: TextStyle(
                             fontSize: 36,
@@ -63,7 +63,7 @@ class _LoginscreenState extends State<Loginscreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Welcome Back to ',
                               style: TextStyle(
                                 fontSize: 16,
@@ -90,7 +90,7 @@ class _LoginscreenState extends State<Loginscreen> {
                       const SizedBox(height: 10), 
                        Row(
                       children: [
-                        Text("Don't have an account?",
+                        const Text("Don't have an account?",
                         style: TextStyle(
                           fontSize: 14,
                           color: AppColors.fontColorBlack,

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mytodo_app/features/authentication/ui/loginScreen.dart';
-import 'package:mytodo_app/features/authentication/ui/signUpScreen.dart';
 import 'package:mytodo_app/features/home/ui/homeScreen.dart';
 
 

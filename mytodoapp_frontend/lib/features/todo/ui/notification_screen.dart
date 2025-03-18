@@ -17,7 +17,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
       appBar: AppBar(
         toolbarHeight: 100,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Notification',
           style: TextStyle(
             fontSize: 20,
@@ -33,7 +33,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
             decoration: BoxDecoration(
                 color: AppColors.accentColor,
                 borderRadius: BorderRadius.circular(10)),
-            child: Center(
+            child: const Center(
               child: Icon(
                 Icons.arrow_back,
                 color: Colors.white,
@@ -56,10 +56,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
             ),
              
             Container(
-               padding:EdgeInsets.symmetric(horizontal:20),
+               padding:const EdgeInsets.symmetric(horizontal:20),
               height:60,
               width:screenWidth,
-              child:Column(
+              child:const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -86,10 +86,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
             ),
             Container(
               color:AppColors.notificationBgColor,
-               padding:EdgeInsets.symmetric(horizontal:20),
+               padding:const EdgeInsets.symmetric(horizontal:20),
               height:60,
               width:screenWidth,
-              child:Column(
+              child:const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -115,10 +115,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
               ),
             ),
             Container(
-               padding:EdgeInsets.symmetric(horizontal:20),
+               padding:const EdgeInsets.symmetric(horizontal:20),
               height:60,
               width:screenWidth,
-              child:Column(
+              child:const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -145,10 +145,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
             ),
             Container(
               color:AppColors.notificationBgColor,
-               padding:EdgeInsets.symmetric(horizontal:20),
+               padding:const EdgeInsets.symmetric(horizontal:20),
               height:60,
               width:screenWidth,
-              child:Column(
+              child:const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -175,10 +175,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
             ),
             Container(
               color:AppColors.notificationBgColor,
-               padding:EdgeInsets.symmetric(horizontal:20),
+               padding:const EdgeInsets.symmetric(horizontal:20),
               height:60,
               width:screenWidth,
-              child:Column(
+              child:const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

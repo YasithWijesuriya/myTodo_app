@@ -18,7 +18,7 @@ class _CustomtodocardState extends State<Customtodocard> {
     return Container(
                           width: screenWidth,
                           height: 70,
-                          margin:EdgeInsets.only(bottom: 10),
+                          margin:const EdgeInsets.only(bottom: 10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             border: Border.all(
@@ -42,11 +42,11 @@ class _CustomtodocardState extends State<Customtodocard> {
                                   :AppColors.accentColor,
                                 ),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               widget.isTaskCompleted?
-                              SizedBox()
+                              const SizedBox()
 
-                              :Column(
+                              :const Column(
                                 children: [
                                   Spacer(),
                                   Icon(Icons.edit),
@@ -60,7 +60,7 @@ class _CustomtodocardState extends State<Customtodocard> {
                                   Spacer(),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15,
                               ),
                             ],
