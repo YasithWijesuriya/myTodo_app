@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:mytodo_app/contants/color.dart';
+import 'package:mytodo_app/features/authentication/ui/signUpScreen.dart';
 import 'package:mytodo_app/widgets/customButton.dart';
 import 'package:mytodo_app/widgets/customTextfield.dart';
 
@@ -97,12 +98,19 @@ class _LoginscreenState extends State<Loginscreen> {
                           fontWeight: FontWeight.w500,  
                         ),
                         ),
-                        Text(' SignUp',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.blue[900],
-                          fontWeight: FontWeight.w600,  
-                        ),
+                        GestureDetector(
+                          onTap:(){
+                            Navigator.push(context , MaterialPageRoute(builder: (context)=>SignUpscreen(),
+                            ),
+                            );
+                          },
+                          child: Text(' SignUp',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.blue[900],
+                            fontWeight: FontWeight.w600,  
+                          ),
+                          ),
                         ),
                       ],
                       ),
